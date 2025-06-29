@@ -1272,7 +1272,7 @@
             <div class="partner">
               <img src="./src/assets/images/gourmet.png" />
               <p>Restaurante Gourmet</p>
-              <p class="partner-desc">Donando excedentes diarios desde 2020</p>
+              <p class="partner-desc">Trabajando con nosotros desde el 2020</p>
             </div>
             <div class="partner">
               <img src="./src/assets/images/cafe.jpg" alt="Cafetería Central" />
@@ -1348,34 +1348,12 @@
 
                 <form id="donationForm">
                   <div class="form-group">
-                    <label for="name">Nombre:</label>
+                    <label for="name">Nombre del Negocio:</label>
                     <input type="text" id="name" name="name" required />
                   </div>
                   <div class="form-group">
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required />
-                  </div>
-                  <div class="form-group">
-                    <label for="phone">Teléfono:</label>
-                    <input type="tel" id="phone" name="phone" required />
-                  </div>
-                  <div class="form-group">
-                    <label for="donation-type">Tipo de donación:</label>
-                    <select id="donation-type" name="donation-type">
-                      <option value="restaurant">Restaurante</option>
-                      <option value="store">Tienda de barrio</option>
-                      <option value="market">Supermercado</option>
-                      <option value="individual">Donación individual</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="food-type">Tipo de alimentos:</label>
-                    <textarea
-                      id="food-type"
-                      name="food-type"
-                      rows="3"
-                      placeholder="Describa los alimentos que desea donar"
-                    ></textarea>
+                    <label for="product">Nombre del producto:</label>
+                    <input type="text" id="email" name="product" required />
                   </div>
                   <div class="form-group">
                     <label for="quantity">Cantidad aproximada (kg):</label>
@@ -1386,8 +1364,65 @@
                       min="1"
                     />
                   </div>
+                  <div class="form-group">
+                    <label for="quantity">Precio Oferta (Bs):</label>
+                    <input
+                      type="number"
+                      id="quantity"
+                      name="quantity"
+                      min="0"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="quantity">Precio Original (Bs):</label>
+                    <input
+                      type="number"
+                      id="quantity"
+                      name="quantity"
+                      min="0"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="quantity">Fecha de Vencimiento:</label>
+                    <input
+                      type="date"
+                      id="quantity"
+                      name="quantity"
+                      min="0"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="quantity">Direccion de recojo de productos:</label>
+                    <input
+                      type="text"
+                      id="quantity"
+                      name="quantity"
+                      min="0"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Whatsapp:</label>
+                    <input type="tel" id="phone" name="phone" required />
+                  </div>
+                  <!-- <div class="form-group">
+                    <label for="donation-type">Tipo de donación:</label>
+                    <select id="donation-type" name="donation-type">
+                      <option value="restaurant">Restaurante</option>
+                      <option value="store">Tienda de barrio</option>
+                      <option value="market">Supermercado</option>
+                      <option value="individual">Donación individual</option>
+                    </select>
+                  </div> -->
+                  <div class="form-group">
+                    <label for="food-type">Foto del producto:</label>
+                    <input
+                      id="food-type"
+                      name="food-type"
+                      type="file"
+                    ></i>
+                  </div>
                   <button type="submit" class="btn btn-primary">
-                    Enviar solicitud
+                    Enviar
                   </button>
                 </form>
               </div>
